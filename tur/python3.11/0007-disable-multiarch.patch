@@ -2,7 +2,7 @@ https://github.com/termux/termux-packages/issues/11870
 
 --- a/configure
 +++ b/configure
-@@ -6202,6 +6202,8 @@
+@@ -6213,6 +6213,8 @@ rm -f conftest.c conftest.out
  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for multiarch" >&5
  $as_echo_n "checking for multiarch... " >&6; }
  case $ac_sys_system in #(

@@ -1,6 +1,6 @@
 --- a/Lib/http/server.py
 +++ b/Lib/http/server.py
-@@ -1165,10 +1165,6 @@
+@@ -1186,10 +1186,6 @@ def run_cgi(self):
                  return
              # Child
              try:
@@ -23,7 +23,7 @@
  
      --version
      -V
-@@ -863,7 +864,7 @@
+@@ -781,7 +782,7 @@ def _deliver(self, mailfrom, rcpttos, data):
  
  
  class Options:

@@ -3,12 +3,11 @@ use LDFLAGS when building modules (and not much point in this case).
 
 --- a/Modules/_cursesmodule.c
 +++ b/Modules/_cursesmodule.c
-@@ -121,7 +121,7 @@
- #include <term.h>
+@@ -127,7 +127,7 @@ static const char PyCursesVersion[] = "2.2";
+ #undef columns
  #endif
  
 -#ifdef HAVE_LANGINFO_H
 +#if defined(HAVE_LANGINFO_H) && !defined(__ANDROID__)
  #include <langinfo.h>
  #endif
- 

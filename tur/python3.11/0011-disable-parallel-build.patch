@@ -2,7 +2,7 @@ https://github.com/termux/termux-packages/issues/15908
 
 --- a/setup.py
 +++ b/setup.py
-@@ -306,8 +306,6 @@
+@@ -307,8 +307,6 @@ def __init__(self, dist):
          self.failed_on_import = []
          self.missing = []
          self.disabled_configure = []

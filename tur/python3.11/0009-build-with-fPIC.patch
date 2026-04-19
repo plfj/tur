@@ -1,6 +1,6 @@
 --- a/configure
 +++ b/configure
-@@ -11027,7 +11029,7 @@
+@@ -11040,7 +11040,7 @@ then
  		 then CCSHARED="-fPIC";
  		 else CCSHARED="+z";
  		 fi;;
