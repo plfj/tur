@@ -80,8 +80,6 @@ termux_step_pre_configure() {
 	export PKG_CONFIG_PATH="${TERMUX_PREFIX}/lib/pkgconfig"
 	CPPFLAGS+=" -I$TERMUX_STANDALONE_TOOLCHAIN/sysroot/usr/include"
 	LDFLAGS+=" -L$TERMUX_STANDALONE_TOOLCHAIN/sysroot/usr/lib"
-	CPPFLAGS+=" -I${TERMUX_PREFIX}/include"
-	LDFLAGS+=" -L${TERMUX_PREFIX}/lib"
 	if [ $TERMUX_ARCH = x86_64 ]; then LDFLAGS+=64; fi
 
 	if [ "$TERMUX_ON_DEVICE_BUILD" = "true" ]; then
