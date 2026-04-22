@@ -1,6 +1,6 @@
 --- a/Lib/aifc.py
 +++ b/Lib/aifc.py
-@@ -961,7 +961,7 @@ def open(f, mode=None):
+@@ -961,7 +961,7 @@
  if __name__ == '__main__':
      import sys
      if not sys.argv[1:]:
@@ -11,7 +11,7 @@
          print("Reading", fn)
 --- a/Lib/mailcap.py
 +++ b/Lib/mailcap.py
-@@ -67,7 +67,8 @@ def listmailcapfiles():
+@@ -67,7 +67,8 @@
              # Don't bother with getpwuid()
              home = '.' # Last resort
          mailcaps = [home + '/.mailcap', '/etc/mailcap',
@@ -44,7 +44,7 @@
  
 --- a/Lib/uuid.py
 +++ b/Lib/uuid.py
-@@ -362,7 +362,6 @@ def _get_command_stdout(command, *args):
+@@ -362,7 +362,6 @@
  
      try:
          path_dirs = os.environ.get('PATH', os.defpath).split(os.pathsep)
@@ -54,7 +54,7 @@
              return None
 --- a/Lib/subprocess.py
 +++ b/Lib/subprocess.py
-@@ -1810,9 +1810,7 @@ def _execute_child(self, args, executable, preexec_fn, close_fds,
+@@ -1810,9 +1810,7 @@
                  args = list(args)
  
              if shell:
@@ -67,7 +67,7 @@
                      args[0] = executable
 --- a/Lib/tempfile.py
 +++ b/Lib/tempfile.py
-@@ -171,7 +171,7 @@ def _candidate_tempdir_list():
+@@ -171,7 +171,7 @@
                           _os.path.expandvars(r'%SYSTEMROOT%\Temp'),
                           r'c:\temp', r'c:\tmp', r'\temp', r'\tmp' ])
      else:

@@ -1,6 +1,6 @@
 --- a/setup.py
 +++ b/setup.py
-@@ -1332,8 +1332,8 @@ def detect_multiprocessing(self):
+@@ -1332,8 +1332,8 @@
              sysconfig.get_config_var('POSIX_SEMAPHORES_NOT_ENABLED')
          ):
              multiprocessing_srcs.append('_multiprocessing/semaphore.c')
@@ -13,7 +13,7 @@
          # Build the _uuid module if possible
 --- a/Lib/multiprocessing/heap.py
 +++ b/Lib/multiprocessing/heap.py
-@@ -70,7 +70,7 @@ class Arena(object):
+@@ -70,7 +70,7 @@
          """
  
          if sys.platform == 'linux':
@@ -24,7 +24,7 @@
  
 --- a/Modules/_multiprocessing/multiprocessing.c
 +++ b/Modules/_multiprocessing/multiprocessing.c
-@@ -172,7 +172,7 @@ static PyMethodDef module_methods[] = {
+@@ -172,7 +172,7 @@
      _MULTIPROCESSING_RECV_METHODDEF
      _MULTIPROCESSING_SEND_METHODDEF
  #endif
@@ -36,7 +36,7 @@
 
 --- a/Modules/_multiprocessing/posixshmem.c
 +++ b/Modules/_multiprocessing/posixshmem.c
-@@ -11,6 +11,9 @@ posixshmem - A Python extension that provides shm_open() and shm_unlink()
+@@ -11,6 +11,9 @@
  #include <sys/mman.h>
  #endif
  

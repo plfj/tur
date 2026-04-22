@@ -3,7 +3,7 @@ use LDFLAGS when building modules (and not much point in this case).
 
 --- a/Modules/_cursesmodule.c
 +++ b/Modules/_cursesmodule.c
-@@ -127,7 +127,7 @@ static const char PyCursesVersion[] = "2.2";
+@@ -127,7 +127,7 @@
  #undef columns
  #endif
  

@@ -1,6 +1,6 @@
 --- a/setup.py
 +++ b/setup.py
-@@ -982,7 +982,8 @@ def detect_simple_extensions(self):
+@@ -982,7 +982,8 @@
  
          # Lance Ellinghaus's syslog module
          # syslog daemon interface
